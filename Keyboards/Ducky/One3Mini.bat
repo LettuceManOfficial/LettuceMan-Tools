@@ -7,7 +7,7 @@ echo =====================================
 echo 1. One 3 Mini RGB (DKON2161ST)		
 echo 2. Go Back
 echo =====================================
-set /p option=Choose an option (1-9): 
+set /p option=Choose an option (1-2): 
 
 if "%option%"=="1" goto DKON2161ST
 if "%option%"=="2" goto Ducky

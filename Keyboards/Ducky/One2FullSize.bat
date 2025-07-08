@@ -9,7 +9,7 @@ echo 2. One 2 Single-backlit (DKON1808S)
 echo 3. One 2 RGB (DKON1808ST)	
 echo 4. Go Back
 echo =====================================
-set /p option=Choose an option (1-9): 
+set /p option=Choose an option (1-4): 
 
 if "%option%"=="1" goto DKON1808
 if "%option%"=="2" goto DKON1808S

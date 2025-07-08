@@ -8,7 +8,7 @@ echo 1. One 3 TKL Non-backlit (DKON2187)
 echo 2. One 3 TKL RGB (DKON2187ST)	
 echo 3. Go Back
 echo =====================================
-set /p option=Choose an option (1-9): 
+set /p option=Choose an option (1-3): 
 
 if "%option%"=="1" goto DKON2187
 if "%option%"=="2" goto DKON2187ST

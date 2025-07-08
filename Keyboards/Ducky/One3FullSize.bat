@@ -8,7 +8,7 @@ echo 1. One 3 FullSize Non-backlit (DKON2108)
 echo 2. One 3 FullSize RGB (DKON2108ST)	
 echo 3. Go Back
 echo =====================================
-set /p option=Choose an option (1-9): 
+set /p option=Choose an option (1-3): 
 
 if "%option%"=="1" goto DKON2108
 if "%option%"=="2" goto DKON2108ST
