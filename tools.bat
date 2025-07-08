@@ -44,7 +44,16 @@ start "Dark Mode Off.reg"
 exit
 
 :ProgramUninstaller
-"BCUninstaller\BCUninstaller.exe"
+echo =====================================
+echo    Please note that HDD Space is
+echo    required to download the app.
+echo =====================================
+pause
+cls
+winget install Microsoft.DotNet.DesktopRuntime.6
+cls
+winget install Klocman.BulkCrapUninstaller
+"C:\Program Files\BCUninstaller\BCUninstaller.exe"
 exit
 
 :KeyboardBIOSFlashing
