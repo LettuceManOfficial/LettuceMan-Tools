@@ -5,7 +5,7 @@
 
 ## To Run the Script
  Open tools.bat
- Ensure that you have all the required files (Everything from this repository.)
+Ensure that you have all the required files (Everything from this repository.)
 
 
 
