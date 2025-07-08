@@ -13,4 +13,5 @@ cls
 echo Opening Flashing Tool... (Ducky Keyboards Have a GUI Flasher. )
 start C:\Temp\CY0566_Ducky_OnePro3_v1.01.exe
 pause
+start Keyboards\Ducky.bat
 exit

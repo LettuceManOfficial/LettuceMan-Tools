@@ -24,9 +24,10 @@ set /p option=Choose an option (1-9):
 
 if "%option%"=="1" goto One3Pro
 if "%option%"=="2" goto One3FullSize
+if "%option%"=="3" goto One3TKL
 if "%option%"=="4" goto One2FullSize
 if "%option%"=="8" goto Page2Ducky
-if "%option%"=="9" goto KeyboardBIOSFlashing
+if "%option%"=="9" goto MainMenu
 
 :Page2Ducky
 cls
@@ -57,10 +58,18 @@ set /p option=Choose an option (1-9):
 start Keyboards\Ducky\One3Pro.bat
 exit
 
+:One3TKL
+start Keyboards\Ducky\One3TKL.bat
+exit
+
 :One3FullSize
 start Keyboards\Ducky\One3FullSize.bat
 exit
 
 :One2FullSize
 start Keyboards\Ducky\One2FullSize.bat
+exit
+
+:MainMenu
+start tools.bat
 exit
