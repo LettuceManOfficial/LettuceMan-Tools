@@ -13,10 +13,14 @@ Currently Implemented Features:
 ✅ Dark Mode Switching without Product Key Setup (Registry Hack)
 
 🟨 Keyboard Firmware tool Automatic downloading 
+
   Keyboard brands Supported for updating
-  🟨 Ducky
-  🟥 Wooting
-  Any other brands please tell me. 
+
+  - 🟨 Ducky
+
+  - 🟥 Wooting
+
+  - Any other brands please tell me. 
 
 ✅ BCUninstaller automatically installs and opens
 
