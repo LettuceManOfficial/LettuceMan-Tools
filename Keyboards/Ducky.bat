@@ -30,6 +30,9 @@ if "%option%"=="3" goto One3TKL
 if "%option%"=="4" goto One3SF
 if "%option%"=="5" goto One3Mini
 if "%option%"=="6" goto One2FullSize
+if "%option%"=="7" goto One2TKL
+if "%option%"=="8" goto One2SF
+if "%option%"=="9" goto One2Mini
 if "%option%"=="10" goto Page2Ducky
 if "%option%"=="11" goto MainMenu
 
@@ -80,6 +83,18 @@ exit
 
 :One2FullSize
 start Keyboards\Ducky\One2FullSize.bat
+exit
+
+:One2TKL
+start Keyboards\Ducky\One2TKL.bat
+exit
+
+:One2SF
+start Keyboards\Ducky\One2SF.bat
+exit
+
+:One2Mini
+start Keyboards\Ducky\One2Mini.bat
 exit
 
 :MainMenu
