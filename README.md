@@ -5,9 +5,11 @@
 
 ## To Run the Script
  Open tools.bat
- 
+
 Ensure that you have all the required files (Everything from this repository.)
 
+Currently Implemented Features:
+✅ Dark Mode Switching without Product Key Setup (Registry Hack)
+🟨 Keyboard Firmware tool Automatic downloading 
+🟨 BCUninstaller automatically installs and opens
 
-
- Big changes will happen over time, Be prepared. 
