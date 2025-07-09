@@ -49,7 +49,6 @@ exit
 cd %AppData%
 mkdir LMTools-Archives
 cd LMTools-Archives
-C:\Users\Oscar\AppData\Roaming\LMTools-Archives
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri 'https://github.com/LettuceManOfficial/LettuceMan-Tools/raw/refs/heads/main/updater.bat' -OutFile '%AppData%\LMTools-Archives\updater.bat'"
 start %AppData%\LMTools-Archives\updater.bat
 exit
