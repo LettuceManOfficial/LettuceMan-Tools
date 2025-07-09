@@ -36,11 +36,11 @@ if "%option%"=="2" goto DarkModeOFF
 if "%option%"=="3" goto MENU
 
 :DarkModeON
-start "Dark Mode On.reg"
+start Dark.reg
 exit
 
 :DarkModeOFF
-start "Dark Mode Off.reg"
+start Light.reg
 exit
 
 :ProgramUninstaller
@@ -73,6 +73,8 @@ if "%option%"=="3" goto MENU
 
 :Ducky
 start Keyboards\Ducky.bat
+exit
 
 :Wooting
 start Keyboards\Wooting.bat
+exit

@@ -1,5 +1,5 @@
 Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
-“AppsUseLightTheme“=1
-"SystemUsesLightTheme"=1
+"AppsUseLightTheme"=dword:0
+"SystemUsesLightTheme"=dword:0
