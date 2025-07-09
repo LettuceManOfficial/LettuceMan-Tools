@@ -16,7 +16,7 @@ PowerShell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri '
 cls
 echo Opening Wootility Setup...
 echo Please follow the on-screen instructions to install Wootility.
-"C:\Temp\Wootility Setup 5.0.6.exe"
+"C:\Temp\Wootility_Setup.exe"
 echo Wootility has been installed.
 echo Starting Wootility...
 start %LocalAppData%\programs\wootility\Wootility.exe
