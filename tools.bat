@@ -68,8 +68,11 @@ echo =====================================
 set /p option=Choose an option (1-3): 
 
 if "%option%"=="1" goto Ducky
-if "%option%"=="2" goto DarkModeOFF
+if "%option%"=="2" goto Wooting
 if "%option%"=="3" goto MENU
 
 :Ducky
 start Keyboards\Ducky.bat
+
+:Wooting
+start Keyboards\Wooting.bat
