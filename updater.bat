@@ -1,4 +1,5 @@
 @echo off
+cls
 echo Update Available: 1.3
 echo ===========================
 echo         Location
