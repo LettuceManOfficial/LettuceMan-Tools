@@ -2,19 +2,21 @@
 :MENU
 cls
 echo =====================================
-echo        LettuceMan's Toolbox           
+echo      LettuceMan's Toolbox v1.2           
 echo =====================================
 echo 1. UI Theme
 echo 2. Program Uninstaller
 echo 3. Keyboard BIOS Flasher
-echo 4. Exit
+echo 4. Update App
+echo 5. Exit
 echo =====================================
 set /p option=Choose an option (1-5): 
 
 if "%option%"=="1" goto UIColourModeGUI
 if "%option%"=="2" goto ProgramUninstaller
 if "%option%"=="3" goto KeyboardBIOSFlashing
-if "%option%"=="4" goto Leave
+if "%option%"=="4" goto UpdateTools
+if "%option%"=="5" goto Leave
 goto MENU
 
 :Leave
@@ -41,6 +43,13 @@ exit
 
 :DarkModeOFF
 start Light.reg
+exit
+
+:UpdateTools
+cd %AppData%
+mkdir LMTools-Archives
+cd LMTools-Archives
+start %AppData%\LMTools-Archives\updater.bat
 exit
 
 :ProgramUninstaller
@@ -78,3 +87,4 @@ exit
 :Wooting
 start Keyboards\Wooting.bat
 exit
+
