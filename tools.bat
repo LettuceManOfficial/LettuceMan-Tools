@@ -38,11 +38,15 @@ if "%option%"=="2" goto DarkModeOFF
 if "%option%"=="3" goto MENU
 
 :DarkModeON
-start Dark.reg
+$themePath = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"
+powershell.exe -ExecutionPolicy Bypass -Command "Set-ItemProperty -Path $themePath -Name 'AppsUseLightTheme' -Value 0"
+powershell.exe -ExecutionPolicy Bypass -Command "Set-ItemProperty -Path $themePath -Name 'SystemUsesLightTheme' -Value 0"
 exit
 
 :DarkModeOFF
-start Light.reg
+$themePath = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"
+powershell.exe -ExecutionPolicy Bypass -Command "Set-ItemProperty -Path $themePath -Name 'AppsUseLightTheme' -Value 1"
+powershell.exe -ExecutionPolicy Bypass -Command "Set-ItemProperty -Path $themePath -Name 'SystemUsesLightTheme' -Value 1"
 exit
 
 :UpdateTools
