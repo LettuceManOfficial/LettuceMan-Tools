@@ -38,16 +38,22 @@ if "%option%"=="2" goto DarkModeOFF
 if "%option%"=="3" goto MENU
 
 :DarkModeON
-$themePath = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"
-powershell.exe -ExecutionPolicy Bypass -Command "Set-ItemProperty -Path $themePath -Name 'AppsUseLightTheme' -Value 0"
-powershell.exe -ExecutionPolicy Bypass -Command "Set-ItemProperty -Path $themePath -Name 'SystemUsesLightTheme' -Value 0"
-exit
+powershell.exe -ExecutionPolicy Bypass -Command "Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize' -Name 'AppsUseLightTheme' -Value 0"
+powershell.exe -ExecutionPolicy Bypass -Command "Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize' -Name 'SystemUsesLightTheme' -Value 0"
+echo Colour Setting Finished, Dark Mode is now enabled.
+powershell.exe -ExecutionPolicy Bypass -Command "Stop-Process -Name 'explorer' -Force"
+echo Please restart any open apps to see the changes.
+pause
+goto MENU
 
 :DarkModeOFF
-$themePath = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"
-powershell.exe -ExecutionPolicy Bypass -Command "Set-ItemProperty -Path $themePath -Name 'AppsUseLightTheme' -Value 1"
-powershell.exe -ExecutionPolicy Bypass -Command "Set-ItemProperty -Path $themePath -Name 'SystemUsesLightTheme' -Value 1"
-exit
+powershell.exe -ExecutionPolicy Bypass -Command "Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize' -Name 'AppsUseLightTheme' -Value 1"
+powershell.exe -ExecutionPolicy Bypass -Command "Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize' -Name 'SystemUsesLightTheme' -Value 1"
+echo Colour Setting Finished, Light Mode is now enabled.
+powershell.exe -ExecutionPolicy Bypass -Command "Stop-Process -Name 'explorer' -Force"
+echo Please restart any open apps to see the changes.
+pause
+goto MENU
 
 :UpdateTools
 cd %AppData%
