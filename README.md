@@ -1,7 +1,6 @@
-# LettuceMan's Tools
-
-This is the official toolset of LettuceMan
-
+# 🧰
+# LettuceMan's Toolbox Script
+## This toolbox contains a bunch of interesting features in a couple of files. 
 Request tools or features in the issues section
 
 ## To Run the Script
@@ -10,7 +9,7 @@ Open tools.bat
 
 Ensure that you have all the required files (Everything from this repository.)
 
-Currently Implemented Features:
+## Currently Implemented Features:
 
 ✅ Dark Mode Switching without Product Key Setup (Registry Hack)
 
