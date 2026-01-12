@@ -1,5 +1,5 @@
-# 🧰
-# LettuceMan's Toolbox Script
+
+# 🧰 LettuceMan's Toolbox Script
 ## This toolbox contains a bunch of interesting features in a couple of files. 
 Request tools or features in the issues section
 
