@@ -7,16 +7,18 @@ echo =====================================
 echo 1. UI Theme
 echo 2. Program Uninstaller
 echo 3. Keyboard BIOS Flasher
-echo 4. Update App
-echo 5. Exit
+echo 4. Windows USB Maker with Drivers
+echo 5. Update App
+echo 6. Exit
 echo =====================================
-set /p option=Choose an option (1-5): 
+set /p option=Choose an option (1-6): 
 
 if "%option%"=="1" goto UIColourModeGUI
 if "%option%"=="2" goto ProgramUninstaller
 if "%option%"=="3" goto KeyboardBIOSFlashing
-if "%option%"=="4" goto UpdateTools
-if "%option%"=="5" goto Leave
+if "%option%"=="4" goto WinUSBMaker
+if "%option%"=="5" goto UpdateTools
+if "%option%"=="6" goto Leave
 goto MENU
 
 :Leave
@@ -99,3 +101,15 @@ exit
 start Keyboards\Wooting.bat
 exit
 
+:WinUSBMaker
+cls
+echo =====================================
+echo    Please note that HDD Space is
+echo      required to download any 
+echo           Windows ISOs.
+echo  File sizes are shown next to the
+echo       version of Windows. 
+echo =====================================
+echo Press any key when you understand...
+pause
+cls
